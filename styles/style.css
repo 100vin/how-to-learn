@@ -36,9 +36,9 @@
   z-index: 3;
   margin-left: 64px;
   width: 730px;
+  line-height: 96px;
   font-size: 102px;
   font-weight: 700;
-  line-height: 96px;
 }
 
 .header__subtitle {
@@ -47,9 +47,9 @@
   bottom: 30px;
   left: 64px;
   width: 388px;
+  line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  line-height: 25px;
 }
 
 .header__link {
@@ -68,7 +68,7 @@
   z-index: 2;
   width: 765px;
   height: 608px;
-  /*Добавил картинку фоном, т.к. заданный размер блока непропорционален размеру изображения*/
+  /* Добавил картинку фоном, т.к. заданный размер блока непропорционален размеру изображения */
   background: url(/images/header-image.png) no-repeat right bottom / contain;
 }
 
@@ -81,6 +81,50 @@
   height: 568px;
   background-color: #2f80ed;
 }
+
+.description {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.two-columns__brief {
+  width: 175px;
+  margin: 0;
+  color: #2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.two-columns__span-accent {
+  font-weight: 700;
+}
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
