@@ -35,7 +35,7 @@
   position: relative;
   z-index: 3;
   margin-left: 64px;
-  width: 730px;
+  max-width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 700;
@@ -47,6 +47,7 @@
   bottom: 30px;
   left: 64px;
   width: 388px;
+  margin: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -68,8 +69,8 @@
   z-index: 2;
   width: 765px;
   height: 608px;
-  /* Добавил картинку фоном, т.к. заданный размер блока непропорционален размеру изображения */
-  background: url(/images/header-image.png) no-repeat right bottom / contain;
+  object-fit: contain;
+  object-position: right bottom;
 }
 
 .header__square-pic {
@@ -270,7 +271,7 @@
   justify-content: space-between;
 }
 
-.footer_author {
+.footer__author {
   margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
@@ -285,7 +286,9 @@
 }
 
 .footer__column-links {
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
+  padding: 0;
+  list-style: none;
 }
 
 .footer__column-link {
