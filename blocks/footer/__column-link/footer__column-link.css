@@ -1,0 +1,12 @@
+.footer__column-link {
+  display: block;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__column-link:hover {
+  text-decoration: underline;
+}
