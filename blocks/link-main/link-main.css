@@ -1,0 +1,14 @@
+.link-main {
+  color: #2f80ed;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity .2s ease;
+}
+
+.link-main::after {
+  content: " →";
+}
+
+.link-main:hover {
+  opacity: .7;
+}
